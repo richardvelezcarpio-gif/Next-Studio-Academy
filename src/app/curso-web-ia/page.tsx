@@ -85,7 +85,7 @@ export default function CursoWebIA() {
   }
 
   const selectedPrice =
-    selectedModality === "online" ? "$197" : "$297";
+    selectedModality === "online" ? "$1" : "$297";
 
   const selectedTitle =
     selectedModality === "online"
@@ -585,7 +585,7 @@ export default function CursoWebIA() {
 
                 <div className="mt-2 flex items-end gap-2">
                   <span className="text-5xl font-black tracking-tight">
-                    $197
+                    $1
                   </span>
 
                   <span className="pb-2 font-semibold text-slate-400">
@@ -624,7 +624,7 @@ export default function CursoWebIA() {
                 onClick={() => chooseModality("online")}
                 className="mt-9 w-full rounded-2xl bg-blue-700 px-6 py-4 font-black text-white shadow-lg shadow-blue-700/20 transition hover:bg-blue-800"
               >
-                Elegir Online — $197 →
+                Elegir Online — 1 →
               </button>
             </div>
 
@@ -841,7 +841,7 @@ export default function CursoWebIA() {
                       : "bg-white/10 text-white hover:bg-white/20"
                   }`}
                 >
-                  Online $197
+                  Online $1
                 </button>
 
                 <button

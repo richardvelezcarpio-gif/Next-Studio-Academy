@@ -120,7 +120,7 @@ async function verifyPayPalOrder(orderID: string) {
 
   const expectedAmount =
     modality === "online"
-      ? "197.00"
+      ? "1.00"
       : "297.00";
 
   if (amount !== expectedAmount) {

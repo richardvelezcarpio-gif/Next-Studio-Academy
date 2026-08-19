@@ -66,7 +66,7 @@ export default function PayPalCheckout({
 
   const price =
     modality === "online"
-      ? "197.00"
+      ? "1.00"
       : "297.00";
 
   const clientId =

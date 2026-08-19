@@ -12,7 +12,7 @@ const PAYPAL_BASE =
 const PRODUCTS = {
   online: {
     name: "Next Studio Academy - Online en vivo",
-    price: "197.00",
+    price: "1.00",
   },
   presencial: {
     name: "Next Studio Academy - Presencial",
