@@ -120,7 +120,7 @@ async function verifyPayPalOrder(orderID: string) {
 
   const expectedAmount =
     modality === "online"
-      ? "1.00"
+      ? "197.00"
       : "297.00";
 
   if (amount !== expectedAmount) {
@@ -427,6 +427,21 @@ if (
 
           enrollmentID:
             enrollment?.id ?? "",
+
+          courseName:
+            "Curso Web con IA",
+
+          courseStart:
+            payment.modality === "online" ? "Viernes, 28 de agosto de 2026" : "Por confirmar al completar un grupo mínimo de 10 personas",
+
+          coursePeriod:
+            payment.modality === "online" ? "28 de agosto al 4 de septiembre de 2026" : "Por confirmar",
+
+          courseSchedule:
+            payment.modality === "online" ? "7:00 PM – 9:00 PM" : "Por confirmar",
+
+          accessInstructions:
+            payment.modality === "online" ? "Las instrucciones de acceso serán enviadas antes del inicio del curso." : "Te notificaremos cuando se confirme la fecha del grupo presencial en New York.",
         }),
       },
     );

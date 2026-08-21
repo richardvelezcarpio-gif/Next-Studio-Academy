@@ -453,7 +453,9 @@ export default function CompletarInscripcion() {
             </p>
 
             <p className="mt-2 leading-7 text-slate-600">
-              Te enviaremos la información del próximo grupo, horario y detalles de acceso.
+              {payment.modality === "online"
+                ? "Recibirás las instrucciones de acceso antes del inicio del curso, el viernes 28 de agosto de 2026."
+                : "Te notificaremos cuando se confirme la fecha del grupo presencial en New York."}
             </p>
           </div>
 

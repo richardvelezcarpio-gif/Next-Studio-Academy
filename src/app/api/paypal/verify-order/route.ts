@@ -104,7 +104,9 @@ export async function POST(request: Request) {
       data.status === "COMPLETED" &&
       (!capture || capture.status === "COMPLETED");
 
-    if (!completed || !modality || !amount) {
+    const expectedAmount = modality === "online" ? "197.00" : modality === "presencial" ? "297.00" : null;
+
+    if (!completed || !modality || !expectedAmount || amount !== expectedAmount || currency !== "USD") {
       return NextResponse.json({
         verified: false,
         status: data.status ?? null,

@@ -198,7 +198,7 @@ export default function InscripcionConfirmada() {
               </div>
 
               <p className="mt-7 text-sm font-black uppercase tracking-[0.2em] text-green-700">
-                Inscripción confirmada
+                ¡Tu inscripción está confirmada!
               </p>
 
               <h1 className="mt-4 text-4xl font-black tracking-tight md:text-6xl">
@@ -212,11 +212,11 @@ export default function InscripcionConfirmada() {
               </h1>
 
               <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-600">
-                Tu pago fue verificado correctamente y tu lugar ha
-                sido reservado para el curso{" "}
+                Hemos recibido tu pago e inscripción para el{" "}
                 <strong className="text-slate-900">
-                  Crea tu Página Web con Inteligencia Artificial.
+                  Curso Web con IA.
                 </strong>
+                {" "}Recibirás las instrucciones de acceso antes del inicio del curso.
               </p>
             </div>
 
@@ -340,8 +340,8 @@ export default function InscripcionConfirmada() {
                     </h3>
 
                     <p className="mt-1 leading-7 text-blue-100">
-                      Recibirás fecha, horario, modalidad y detalles de
-                      acceso.
+                      Las instrucciones de acceso serán enviadas antes del
+                      inicio del curso.
                     </p>
                   </div>
                 </div>

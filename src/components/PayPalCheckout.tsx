@@ -66,7 +66,7 @@ export default function PayPalCheckout({
 
   const price =
     modality === "online"
-      ? "1.00"
+      ? "197.00"
       : "297.00";
 
   const clientId =
@@ -496,7 +496,7 @@ export default function PayPalCheckout({
         </p>
 
         <h3 className="mt-2 text-2xl font-black text-slate-950">
-          Debit or Credit Card
+          Tarjeta de débito o crédito
         </h3>
 
         <p className="mt-2 text-sm leading-6 text-slate-500">

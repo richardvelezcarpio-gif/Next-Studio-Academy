@@ -85,7 +85,7 @@ export default function CursoWebIA() {
   }
 
   const selectedPrice =
-    selectedModality === "online" ? "$1" : "$297";
+    selectedModality === "online" ? "$197" : "$297";
 
   const selectedTitle =
     selectedModality === "online"
@@ -229,6 +229,48 @@ export default function CursoWebIA() {
                   ))}
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* NEXT ONLINE COURSE */}
+      <section className="mx-auto max-w-7xl px-6 py-8 lg:px-10 lg:py-10">
+        <div className="overflow-hidden rounded-[34px] bg-gradient-to-r from-[#07152f] via-[#0b3f91] to-[#1267dc] px-6 py-8 text-white shadow-2xl shadow-blue-900/15 md:px-10 md:py-10">
+          <div className="grid gap-8 lg:grid-cols-[1.15fr_1fr] lg:items-center">
+            <div>
+              <p className="text-xs font-black uppercase tracking-[0.22em] text-cyan-300">
+                Próximo curso online
+              </p>
+
+              <h2 className="mt-3 text-3xl font-black tracking-tight md:text-4xl">
+                Comenzamos el viernes 28 de agosto
+              </h2>
+
+              <p className="mt-3 max-w-2xl leading-7 text-blue-100">
+                La fecha se acerca. Reserva tu lugar y prepárate para crear y
+                publicar una página web profesional con inteligencia artificial.
+              </p>
+            </div>
+
+            <div className="grid gap-3 sm:grid-cols-3">
+              {[
+                ["Período", "28 de agosto – 4 de septiembre"],
+                ["Horario", "7:00 PM – 9:00 PM"],
+                ["Modalidad", "Online en vivo"],
+              ].map(([label, value]) => (
+                <div
+                  key={label}
+                  className="rounded-2xl border border-white/15 bg-white/10 p-4 backdrop-blur"
+                >
+                  <p className="text-xs font-black uppercase tracking-[0.14em] text-cyan-200">
+                    {label}
+                  </p>
+                  <p className="mt-2 font-black leading-6 text-white">
+                    {value}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -488,6 +530,10 @@ export default function CursoWebIA() {
 
               <div className="mt-7 space-y-3">
                 <p className="font-bold">✓ 8 clases en vivo</p>
+                <p className="font-bold">✓ Inicio: viernes, 28 de agosto de 2026</p>
+                <p className="font-bold">✓ Período: 28 de agosto al 4 de septiembre de 2026</p>
+                <p className="font-bold">✓ Horario: 7:00 PM – 9:00 PM</p>
+                <p className="font-bold">✓ Modalidad: Online</p>
                 <p className="font-bold">✓ Proyecto práctico</p>
                 <p className="font-bold">
                   ✓ Acompañamiento durante la clase
@@ -510,6 +556,9 @@ export default function CursoWebIA() {
               </p>
 
               <div className="mt-7 space-y-3 text-blue-50">
+                <p className="font-bold">✓ Presencial en New York</p>
+                <p className="font-bold">✓ La fecha será programada cuando se complete un grupo mínimo de 10 personas.</p>
+                <p className="font-bold">✓ Regístrate para reservar tu lugar. Te notificaremos cuando se confirme la fecha del grupo presencial.</p>
                 <p className="font-bold">
                   ✓ 8 clases presenciales
                 </p>
@@ -585,7 +634,7 @@ export default function CursoWebIA() {
 
                 <div className="mt-2 flex items-end gap-2">
                   <span className="text-5xl font-black tracking-tight">
-                    $1
+                    $197
                   </span>
 
                   <span className="pb-2 font-semibold text-slate-400">
@@ -624,7 +673,7 @@ export default function CursoWebIA() {
                 onClick={() => chooseModality("online")}
                 className="mt-9 w-full rounded-2xl bg-blue-700 px-6 py-4 font-black text-white shadow-lg shadow-blue-700/20 transition hover:bg-blue-800"
               >
-                Elegir Online — 1 →
+                Elegir Online — $197 →
               </button>
             </div>
 
@@ -659,10 +708,11 @@ export default function CursoWebIA() {
                   Trabaja conmigo paso a paso.
                 </h3>
 
-                <p className="mt-4 leading-7 text-blue-100">
-                  Una experiencia práctica donde trabajamos en el mismo
-                  espacio, revisamos tu proyecto y avanzamos juntos durante
-                  cada clase.
+              <p className="mt-4 leading-7 text-blue-100">
+                  Presencial en New York. La fecha será programada cuando se
+                  complete un grupo mínimo de 10 personas. Regístrate para
+                  reservar tu lugar. Te notificaremos cuando se confirme la
+                  fecha del grupo presencial.
                 </p>
 
                 <div className="mt-8 border-y border-white/10 py-7">
@@ -841,7 +891,7 @@ export default function CursoWebIA() {
                       : "bg-white/10 text-white hover:bg-white/20"
                   }`}
                 >
-                  Online $1
+                  Online $197
                 </button>
 
                 <button
@@ -861,16 +911,16 @@ export default function CursoWebIA() {
 
               <div className="mt-8 space-y-3 text-sm text-blue-100">
                 <p>✓ Pago procesado de forma segura por PayPal</p>
-                <p>✓ Debit or Credit Card</p>
+                <p>✓ Tarjeta de débito o crédito</p>
                 <p>✓ No necesitas crear una cuenta PayPal</p>
-                <p>✓ Estamos probando actualmente en Sandbox</p>
+                <p>✓ Pago único procesado de forma segura</p>
               </div>
             </div>
 
             <div className="rounded-[36px] bg-[#f8fbff] p-4 text-slate-950 shadow-2xl md:p-7">
               <div className="mb-6">
                 <p className="text-xs font-black uppercase tracking-[0.18em] text-blue-700">
-                  Secure Checkout
+                  Pago seguro
                 </p>
 
                 <h3 className="mt-2 text-3xl font-black">
@@ -886,6 +936,11 @@ export default function CursoWebIA() {
                 key={selectedModality}
                 modality={selectedModality}
               />
+              {selectedModality === "online" && (
+                <p className="mt-5 text-center text-sm leading-6 text-slate-600">
+                  Después de completar tu inscripción y pago, recibirás las instrucciones de acceso al curso.
+                </p>
+              )}
             </div>
           </div>
         </div>
@@ -904,6 +959,16 @@ export default function CursoWebIA() {
           </Link>
         </div>
       </footer>
+
+      <a
+        href="https://wa.me/12393337935?text=Hola%2C%20tengo%20una%20pregunta%20sobre%20el%20Curso%20Web%20con%20IA."
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-5 right-5 z-50 rounded-full bg-[#20a85a] px-5 py-3 text-sm font-black text-white shadow-2xl shadow-green-950/25 transition hover:bg-[#178a49] focus:outline-none focus:ring-4 focus:ring-green-300 sm:bottom-6 sm:right-6"
+        aria-label="Preguntas sobre el Curso Web con IA por WhatsApp"
+      >
+        ¿Preguntas? Escríbenos por WhatsApp
+      </a>
     </main>
   );
 }
